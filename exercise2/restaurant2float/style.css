@@ -1,0 +1,191 @@
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+img:hover {
+  width: 500px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Courier;
+  src: url("Courier-New.woff");
+}
+
+/*navigation styles go here*/
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  display: inline-block;
+  padding: 11px;
+  border: 1px dotted #000;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  font-family: Courier;
+  border-radius: 10px;
+  float: left;
+
+}
+
+a:link, a:visited {
+color: green;
+text-decoration: none;
+display: inline-block;
+}
+
+ a:hover {
+   color:grey;
+   border-style: solid;
+    border:  #000 1px;
+ }
+
+/*---------------------------*/
+
+html{
+background-color:
+  }
+
+header {
+    width: 1500px;
+    height: 220px;
+    position: static;
+    box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  font-size: 12px;
+  padding:10px;
+  max-width: 1800px;
+  box-sizing: border-box;
+
+
+}
+
+.box-meal  {
+  font-family: Courier;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 5px;
+  width: 320px;
+  height: 350px;
+  display: inline-block;
+  position: relative;
+
+}
+.container {
+ display: inline-block;
+ max-width: 1500px;
+
+}
+
+h1 {
+  font-family: Courier;
+}
+
+h3 {
+  font-family: Courier, 'Courier New';
+  text-align: center;
+}
+
+/*box styles go here*/
+
+ul {
+  list-style: none;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow: auto;
+  height: 250px;
+  padding: 4px;
+  margin: 2px;
+  font-family: Courier;
+  cursor: zoom-in;
+
+}
+
+section {
+    line-height: 1.8;
+    height: 300px;
+    font-size: 12px;
+}
+
+.box-note {
+  font-family: Courier;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+
+}
+
+a:hover.box-meal{
+  margin: 0px 5px 9px 0px;
+  padding: 15px;
+
+}
+
+.box-note:hover{
+    background-image: "art.jpg";
+}
+
+ .box-back:hover {
+     background-image: url("art.jpg");
+     font-family: monospace;
+     text-align: center;
+     font-size: 12px;
+ }
+
+.pic {
+  width: 200px;
+  height: 100px;
+}
+
+footer {
+  font-family: Courier;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin: 1px;
+  padding-top: 100px;
+  padding-bottom: 40px
+  position: relative;
+}
+a{
+  border-bottom: 1px dotted #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*bottom styles unused*/
+/*.box {
+    float: left;
+    margin: 1em;
+    padding-left: 0em;
+    font-style: italic;
+  }
+
+.alone {
+  clear: both;
+  margin: 0 auto;
+}
+
+.box2 {
+    float: left;
+    margin: 14px;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.special {
+  margin: 0 auto;
+  width: 200px;
+  align-content: center;
+  padding-left: 2em;
+}
+*/

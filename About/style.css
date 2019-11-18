@@ -1,0 +1,10 @@
+
+a:link, a:visited {
+color: green;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover {
+ color:grey;
+}

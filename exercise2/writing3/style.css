@@ -1,0 +1,72 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+@font-face {
+  font-family: Courier;
+  src: url("Courier-New.woff");
+}
+
+main {
+  background: white;
+  font-size: 12px;
+  font-family: Courier;
+  position: relative;
+display: inline-grid;
+vertical-align: top;
+max-width: 1300px;
+width: 100%;
+max-height: 1500px;
+height: 100%;
+column-width: 100px;
+column-rule-style:  dotted;
+column-rule-width: thin;
+  column-count: 5;
+  display: block;
+  unicode-bidi: isolate;
+  margin-inline-end: auto;
+  overflow: hidden;
+column-gap: 20px;
+font-family: Courier;
+padding: 10px;
+margin: 0 auto;
+grid-auto-flow: row;
+column-span: all;
+line-height: 1.8;
+
+
+}
+
+h1 {
+
+}
+ul {
+  list-style: circle;
+}
+
+a:link, a:visited {
+color: green;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover {
+ color:grey;
+}
+figcaption:hover {
+  background-image: image("lounge.png");
+  position: relative;
+  visibility: hidden;
+  float: right;
+   width:100px;
+   height:70px;
+
+
+}
+.vapor:hover {
+  transition-duration: 2s;
+  transition-property: color;
+  color: #FFFFF0;
+}

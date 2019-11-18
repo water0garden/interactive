@@ -1,0 +1,50 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+body {
+  background: white;
+  color: black;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 2em;
+}
+
+  a:link, a:visited {
+  color: green;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ a:hover {
+   color:grey;
+ }
+
+a:hover:after {
+    content: url(download.png); /* no need for qoutes */
+    display: block;
+    position: static;
+    left: 20px; /* change this value to one that suits you */
+    top: 56px; /* change this value to one that suits you */
+    width: 20%;
+    height:20%;
+}
+
+footer:hover {
+
+  content: url(refil.jpg);
+  display: block;
+  position: inherit;
+  left: 20px; /* change this value to one that suits you */
+  top: 56px; /* change this value to one that suits you */
+  width: 40%;
+  height:40%;
+
+
+}
+
+footer{
+  align-content: flex-end;
+}

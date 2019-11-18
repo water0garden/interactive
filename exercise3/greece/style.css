@@ -1,0 +1,259 @@
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+<audio src="path/to/song.mp3" controls autoplay></audio>
+/*
+img:hover {
+  width: 500px;
+  height: 250px;
+  box-sizing: border-box;
+}
+*/
+@font-face {
+  font-family: Courier;
+  src: url("Courier-New.woff");
+}
+@font-face {
+font-family: serif;
+src: url( "Ambrosia.woff") format ('woff');
+}
+
+/*navigation styles go here*/
+.fixed {
+  position: relative;
+  max-width: 650px;
+  width: 80%;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px dotted #000;
+  font-family: Courier;
+  margin: 2px;
+  float: left;
+  border-radius: 10px;
+  background-color:rgba(205, 205, 205, 0.3);
+  padding: 26px;
+
+}
+
+a:link, a:visited {
+  color: #C0C6C9;
+text-decoration: none;
+display: inline-block;
+}
+
+ a:hover {
+   color: #C0C6C9;
+   border-style: solid;
+    border:  #000 1px;
+ }
+
+/*---------------------------*/
+
+h2 {
+  position: relative;
+  font-family: Ambrosia, serif;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color:rgba(205, 205, 205, 0.3);
+  padding: 20px;
+  border: dotted 1px #000;
+  width: 80%;
+  max-width: 370px;
+  margin: 2px;
+  float: left;
+  text-align: center;
+
+
+}
+
+html{
+
+max-width: 1800px;
+width: 100%;
+margin: 0 auto;
+
+  }
+
+header {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  font-size: 12px;
+  padding:10px;
+  max-width: 1800px;
+  box-sizing: border-box;
+
+
+
+}
+
+.box-meal  {
+  font-family: Courier;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 5px;
+  width: 200px;
+  height: 600px;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+background-color:rgba(205, 205, 205, 0.3);
+
+}
+.container {
+ display: inline-block;
+ max-width: 1500px;
+
+}
+
+
+
+h3 {
+  font-family: Courier, 'Courier New';
+  text-align: center;
+}
+
+/*box styles go here*/
+
+ul {
+  list-style: none;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow: auto;
+  height: 500px;
+  padding: 4px;
+  margin: 5px;
+  font-family: Courier;
+
+}
+.box-meal:hover, .ul:hover {
+  align-items: center;
+  display: inline-block;
+  overflow: auto;
+  float: inherit;
+  flex-flow: wrap;
+  width: 30%;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 600px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 5px;
+  font-family: Courier;
+  text-align: center;
+
+
+
+}
+
+.block {
+
+  float: inherit;
+  flex-flow: wrap;
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+section {
+    line-height: 1.8;
+    height: 300px;
+    font-size: 12px;
+}
+
+.box-note {
+  font-family: Courier;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  margin: 0 auto;
+
+}
+
+a:hover.box-meal{
+  margin: 0px 5px 9px 0px;
+  padding: 15px;
+
+}
+
+.box-note:hover{
+    background-image: "art.jpg";
+}
+
+ .box-back:hover {
+     background-image: url("art.jpg");
+     font-family: monospace;
+     text-align: center;
+     font-size: 12px;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+.pic {
+  width: 200px;
+  height: 100px;
+}
+
+footer {
+  font-family: Courier;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin: 1px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  position: relative;
+}
+a{
+  border-bottom: 1px dotted #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*bottom styles unused*/
+/*.box {
+    float: left;
+    margin: 1em;
+    padding-left: 0em;
+    font-style: italic;
+  }
+
+.alone {
+  clear: both;
+  margin: 0 auto;
+}
+
+.box2 {
+    float: left;
+    margin: 14px;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.special {
+  margin: 0 auto;
+  width: 200px;
+  align-content: center;
+  padding-left: 2em;
+}
+*/

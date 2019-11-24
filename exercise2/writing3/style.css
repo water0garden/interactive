@@ -56,13 +56,12 @@ a:hover {
  color:grey;
 }
 figcaption:hover {
-  background-image: image("lounge.png");
-  position: relative;
-  visibility: hidden;
-  float: right;
-   width:100px;
-   height:70px;
+  background-image: url(lounge.png);
+  max-width: 1200px;
 
+}
+.Suprise {
+  position: ;
 
 }
 .vapor:hover {

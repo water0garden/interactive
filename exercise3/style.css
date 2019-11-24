@@ -4,7 +4,26 @@
 }
 
 /* Global Styles go here */
+
 body {
   background: white;
   color: black;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 2em;
 }
+
+  a:link, a:visited {
+  color: green;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ a:hover {
+   color:grey;
+ }
+
+ ul {
+   text-decoration: none;
+
+ }

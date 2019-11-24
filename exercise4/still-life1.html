@@ -11,39 +11,483 @@
 	<style>
 	.canvas {
 		/* if you want to change the background of your canvas, do it here */
-		background: white;
+		background: rgb(0, 350, 154);
+
 	}
 
 	/* this is where you can style the objects in your still life */
+/*
 	#triangle {
-		width: 0;
-		height: 0;
+
+		border-bottom: 500px;
 		border-left: 100px solid transparent;
 		border-right: 100px solid transparent;
-		border-bottom: 200px solid yellow;
+		border-bottom: 100px solid yellow;
 		position: absolute;
-		top: 160px;
+		top: 300px;
 		left: 100px;
 	}
+*/
 
-	#square {
-		width: 200px;
-		height: 200px;
-		background: red;
+
+    /*#egg {
+      display: block;
+			position: absolute;
+      width: 126px;
+      height: 180px;
+			transform: rotate(-20deg);
+			top: 50px;
+			left: 100px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }*/
+		/**********vase flowers***********/
+
+		#petal {
+			display: block;
+			position: absolute;
+			width: 36px;
+			height: 64px;
+			transform: rotate(350deg);
+			top: 50px;
+			left: 510px;
+			background:rgb( 75,   0, 130);
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+		#petal1 {
+			display: block;
+			position: absolute;
+			width: 36px;
+			height: 64px;
+			transform: rotate(350deg);
+			top: 38px;
+			left: 530px;
+			background: rgb( 75,   0, 130);
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+		#petal2 {
+			display: block;
+			position: absolute;
+			width: 36px;
+			height: 62px;
+			transform: rotate(340deg);
+			top: 40px;
+			left: 550px;
+			background: rgb( 75,   0, 130);
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+		#petal3 {
+			display: block;
+			position: absolute;
+			width: 36px;
+			height: 60px;
+			transform: rotate(20deg);
+			top: 50px;
+			left: 580px;
+			background: rgb( 75,   0, 130);
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+		#petal4{
+					display: block;
+					position: relative;
+					width: 36px;
+					height: 54px;
+					transform: rotate(20deg);
+					top:  70px;
+					left: 610px;
+					background: rgb( 75,   0, 130);
+					border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+					z-index: 1;
+}
+	#petal4{
+		  -webkit-animation-name: petaldrop;  /* Safari 4.0 - 8.0 */
+		  -webkit-animation-duration: 5s;  /* Safari 4.0 - 8.0 */
+		  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+		  -webkit-animation-timing-function: linear;
+		  animation-name: petaldrop;
+		  animation-duration: 5s;
+		  animation-fill-mode: forwards;
+			animation-timing-function: 5s;
+			animation-timing-function: linear;
+			animation-delay: 1s;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes petaldrop {
+		  from {top: 70px;}
+		  to {top: 380px; background-color: white;}
+		}
+
+		@keyframes petaldrop {
+		  from {top: 70px;}
+		  to {top: 380px; background-color: white;}
+			from {top: 70px;}
+}
+
+
+
+
+
+
+
+
+	#stems1 {
+		width: 5px;
+		height: 340px;
 		position: absolute;
-		top: 160px;
-		left: 350px;
+		top: 100px;
+		left: 550px ;
+		background: rgb(46, 139,  87)	;
+}
+		#stems2 {
+			width: 5px;
+			height: 340px;
+			position: absolute;
+			top: 100px;
+			transform: skew(2deg);
+			left: 540px ;
+			background: rgb(46, 139,  87)	;
+}
+			#stems3 {
+				width: 5px;
+				height: 340px;
+				position: absolute;
+				top: 98px;
+				transform: skew(-3deg);
+				left: 570px ;
+				background: rgb(46, 139,  87)	;
+	}
+	#stems4 {
+		width: 5px;
+		height: 340px;
+		position: absolute;
+		top: 98px;
+		transform: rotate(2deg);
+		left: 555px ;
+		background: rgb(46, 139,  87)	;
+}
+
+
+
+	#vase {
+		border-radius: 4px 4px 20px 20px;
+		width: 80px;
+		height: 280px;
+		background: rgb(255, 248, 220, 0.7);
+		position: absolute;
+		top: 170px;
+		left: 520px;
+		z-index: 1;
+		box-shadow: 10px;
+		transition: .5s box-shadow ease-out;
+		-webkit-transition: .5s box-shadow ease-out;
+		-moz-transition: .5s box-shadow ease-out;
+		-o-transition: .5s box-shadow ease-out;
 	}
 
-	#circle {
-		width: 200px;
-		height: 200px;
-		background: blue;
+	#vase:hover {
+		box-shadow: 0 0 50px 25px rgba(255, 255, 255, 0.5);
+		z-index: 1;
+
+	}
+
+
+	#water {
+			width: 78px;
+			height: 14px;
+			top: 300px;
+			left: 520px;
+			position: absolute;
+			border: 1px solid rgb(255, 255, 255, 0.5);
+			z-index: 1;
+			background:  100px rgb(255, 255, 255, 0.3);
+			border-radius: 100px / 20px;
+		}
+
+
+/**********candle***********/
+/*
+#oval {
+		width: 128px;
+		height: 20px;
+		top: 344px;
+		left: 121px;
+		position: absolute;
+		border: 1px rgb(255, 255, 255);
+		z-index: 2;
+		background:  100px rgb(255, 255, 255);
+		border-radius: 100px / 22px;
+	}*/
+		#candle {
+			height: 100px;
+			background:;
+			position: absolute;
+			top: 390px;
+			left: 295px;
+				z-index: 1;
+			transform: rotate(180deg);
+			border-bottom: 100px  solid rgb(255, 248, 220, 0.6);
+			border-left:20px solid transparent;
+			border-right: 20px solid transparent;
+			border-radius: 40px 40px 10px 10px;
+			height: 0;
+			width: 80px;
+
+		}
+
+
+
+			#beeswax {
+				border-radius: 10px 10px 10px 10px;
+				width: 30px;
+				height: 300px;
+				background: rgb(175, 238, 238);
+				position: absolute;
+				top: 180px;
+				left: 340px;
+
+
+
+
+			}
+			#fire {
+				display: block;
+				position: absolute;
+				width: 12px;
+				height: 24px;
+				transform: rotate(350deg);
+				top: 150px;
+				left: 349px;
+				background: rgb(255, 255, 0);
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+				-webkit-animation-duration: 0.33s;
+			 -webkit-animation-name: fire;
+			 -webkit-animation-iteration-count: infinite;
+			 -webkit-animation-direction: alternate;
+			 -webkit-animation-timing-function: ease-in-out;
+			 animation-name: fire;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function: ease-in-out;
+			 z-index: 1;
+			}
+
+
+			@-webkit-keyframes fire {
+			  from {
+			    transform: rotate(6deg);
+			    opacity: 1;
+			  }
+
+			  to {
+			    transform: rotate(-6deg);
+			    opacity: .85;
+			  }
+
+
+}
+
+
+/********** orchid ***********/
+	#branch{
+		border-radius: 10px 10px 10px 10px;
+      width: 7px;
+      height: 650px;
+			position: absolute;
+      background: rgb(46, 139,  87)	;
+			top: 40px;
+			left: 480px;
+			transform: rotate(288deg);
+
+    }
+
+
+/*
+		#plastic{
+			transform: rotate(180deg);
+      width: 40px;
+      height: 480px;
+      border-radius: 50% 50% 50% 50%;
+			left: 0px;
+			top: 40px;
+			background:  100px rgb(255, 255, 255, 0.9);
+    }
+*/
+		/*	width: 0;
+		height: 0;
+		background: rgb(255, 248, 220, );
+		border-left: 70px solid transparent;
+		border-right: 70px solid transparent;
+		border-radius: 50%;
+				position: absolute;
+
+				top: 100px;
+				left: 480px;
+				z-index:1;
+
+			}*/
+/*
+		#iris {
+			width: 40px;
+			height: 40px;
+			background: red;
+			border-radius: 200px;
+			background: rgb(100, 149, 237);
+			position: absolute;
+			top: 190px;
+			left: 130px;
+			z-index: 1
+		}
+		#iris1 {
+			width: 40px;
+			height: 40px;
+			background: rgb(100, 149, 237);
+			border-radius: 200px;
+			position: absolute;
+			top: 220px;
+			left: 150px;
+			z-index: 1
+		}
+		#iris2 {
+			width: 40px;
+			height: 40px;
+			background: rgb(100, 149, 237);
+			border-radius: 200px;
+			position: absolute;
+			top: 260px;
+			left: 110px;
+		}
+		#iris3 {
+			width: 40px;
+			height: 40px;
+			background: rgb(100, 149, 237);
+			border-radius: 200px;
+			position: absolute;
+			top: 250px;
+			left: 140px;
+			z-index: 1;
+		}
+		#iris4 {
+			width: 70px;
+			height: 70px;
+			background: yellow;
+			border-radius: 200px;
+			position: absolute;
+			top: 205px;
+			left: 100px;
+		}*/
+
+		/***flower2***/
+
+			#orchid {
+				width: 35px;
+				height: 60px;
+				background: white;
+				border-radius: 200px;
+				position: absolute;
+				top: 180px;
+				left: 130px;
+				z-index: 1;
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			}
+			#orchid1 {
+				width: 50px;
+				height: 60px;
+				background: white;
+				border-radius: 200px;
+				position: absolute;
+				top: 210px;
+				left: 150px;
+				z-index: 1;
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			}
+			#orchid2 {
+				width: 30px;
+				height: 60px;
+				background: white;
+				border-radius: 200px;
+				position: absolute;
+				top: 260px;
+				left: 110px;
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			}
+			#orchid3 {
+				width: 45px;
+				height: 60px;
+				background: white;
+				border-radius: 200px;
+				position: absolute;
+				top: 250px;
+				left: 140px;
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+				z-index: 1;
+}
+			#orchid4 {
+				width: 30px;
+				height: 30px;
+				background: yellow;
+				border-radius: 200px;
+				position: absolute;
+				top: 230px;
+				left: 110px;
+				z-index: 1;
+				border: solid 8px white;
+				border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+		#orchid5 {
+			width: 35px;
+			height: 60px;
+			background: white;
+			border-radius: 200px;
+			position: absolute;
+			transform: rotate(320deg);
+			top: 200px;
+			left: 95px;
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+
+		}
+		#orchid6 {
+			width: 5px;
+			height: 20px;
+			background: white;
+			border-radius: 200px;
+			position: absolute;
+			transform: rotate(50deg);
+			top: 240px;
+			left: 122px;
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			z-index: 1;
+		}
+		#orchid7 {
+			width: 5px;
+			height: 20px;
+			background: white;
+			border-radius: 200px;
+			position: absolute;
+			transform: rotate(50deg);
+			top: 250px;
+			left: 130px;
+			border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+			z-index: 1;
+		}
+
+
+
+
+	/*#circle {
+		width: 150px;
+		height: 150px;
+		transform: skew(30deg);
+			background: rgb(255, 248, 220, 0.7);
 		border-radius: 200px;
 		position: absolute;
-		top: 160px;
-		left: 600px;
+		top: 100px;
+		left: 120px;
 	}
+
+*/
+/*anime*/
+
 
 	</style>
 
@@ -55,9 +499,46 @@
     <div class="canvas">
 
 			<!-- below is where you put your objects in your still life -->
-    	<div id="square"></div>
-    	<div id="circle"></div>
+	<div id="oval"></div>
+			<div id="vase"></div>
+			<div id="water"></div>
+			<div id="stems1"></div>
+			<div id="stems2"></div>
+			<div id="stems3"></div>
+			<div id="stems4"></div>
+			<div id="petal"></div>
+			<div id="petal1"></div>
+			<div id="petal2"></div>
+			<div id="petal3"></div>
+			<div id="petal4"></div>
+			<div id="petal5"></div>
+
+    	<div id="iris"></div>
+			<div id="iris1"></div>
+			<div id="iris2"></div>
+			<div id="iris3"></div>
+			<div id="iris4"></div>
     	<div id="triangle"></div>
+
+			<div id="table"></div>
+			<div id="branch"></div>
+			<div id="orchid"></div>
+			<div id="orchid1"></div>
+			<div id="orchid2"></div>
+			<div id="orchid3"></div>
+			<div id="orchid4"></div>
+			<div id="orchid5"></div>
+			<div id="orchid6"></div>
+			<div id="orchid7"></div>
+<div id="plastic"></div>
+			<div id="fire"></div>
+			<div id="candle"></div>
+			<div id="beeswax"></div>
+			<div id="egg"></div>
+			<div id="circle"></div>
+
+
+
 
 		<!-- this ends the canvas div. do not delete this! -->
     </div>

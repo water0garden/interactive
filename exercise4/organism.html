@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+
+
+
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: rgb(220,220,220);
+	}
+
+.canvas:hover  {
+	background-color: rgb(112, 128, 144	);
+	transition: .5s  ease-out;
+	-webkit-transition: .5s ease-out;
+	-moz-transition: .5s  ease-out;
+	-o-transition: .5s ease-out;
+	z-index: 1;
+}
+
+
+#glasshouse {
+	position: absolute;
+	border-radius: 50px 50px 50px 50px;
+	top: 40px;
+	left: 20px;
+	width: 60px;
+	height: 50px;
+	background-image: linear-gradient(-190deg, rgb(245, 245, 245, 0.7),rgb(169, 169, 169, 0.7));
+	z-index: 1;
+
+}
+
+#glasshouse:hover {
+	transition: 5s;
+	-webkit-transition: .5s ease-out;
+	-moz-transition: .5s  ease-out;
+	-o-transition: .5s ease-out;
+		border-radius: 2px;
+
+}
+
+						#dust {
+							position: absolute;
+							box-shadow: 1px;
+							border-radius: 50px 50px 50px;
+							top: 100px;
+							left: 400px;
+							width: 70px;
+							height: 70px;
+							background-image:  0 0px 50px 30px  white;
+							z-index: 1;
+							transform: rotate3d(1, 0.5, 0, 110deg);
+						}
+						#dust{
+
+						box-shadow: 1px;
+						transition: .5s;
+						-webkit-transition: .8s box-shadow ease-in-out;
+						-moz-transition: .8s box-shadow ease-in-out;
+						-o-transition: .8s box-shadow ease-in-out;
+						box-shadow: 0 0px 50px 30px white;
+						-webkit-animation-duration: 8s;
+						-webkit-animation-name: danceride;
+						animation-iteration-count: infinite;
+						animation-name: danceride;
+						animation-direction: alternate;
+						animation-timing-function: linear;
+						-webkit-animation-duration: 0.33s;
+						}
+
+
+						#dust {
+							-webkit-animation-duration: 8s;
+							-webkit-animation-name: danceride;
+							animation-iteration-count: infinite;
+							animation-name: danceride;
+							animation-direction: alternate;
+							animation-timing-function: linear;
+							-webkit-animation-duration: 8s;
+						}
+						@-webkit-keyframes danceride {
+							0%   { transform: rotate3d(0, 1, 0, 20deg); }
+		  			50% { transform: rotate3d(0, 1, 0, 120deg); }
+		  		100% { transform: rotate3d(0, 1, 0, 360deg); }
+						}
+}
+
+
+	#vase {
+		border-radius: 50px 50px 50px 50px;
+		width: 50px;
+		height: 50px;
+		background: white;
+		position: absolute;
+		top: 90px;
+		left: 720px;
+		z-index: 1;
+		box-shadow: 10px;
+		direction: ltr;
+		box-shadow: 0 0 50px 65px rgba(255, 255, 255, 0.9);
+		-webkit-animation-name: sun;
+		animation-iteration-count: infinite;
+		animation-name: sun;
+		animation-direction: normal;
+		animation-timing-function: linear;
+			-webkit-animation-duration: 10s;
+	}
+	@-webkit-keyframes sun {
+			from {
+			transform: rotate(0deg);
+			top: 50px;
+
+		}
+
+		to {
+
+				transform: rotate(360deg);
+				top: 330px;
+
+
+		}
+	}
+
+					#vase:hover{
+					box-shadow: 2px;
+					transition: .5s box-shadow ease-in;
+					-webkit-transition: .5s box-shadow ease-in;
+					-moz-transition: .5s box-shadow ease-in;
+					-o-transition: .5s box-shadow ease-in;
+					box-shadow: 0 0 50px 65px rgba(255, 250, 205);
+					z-index: 1;
+					}
+
+				#water{
+				width:10px;
+				height:0px;
+				top: 200px;
+				left: 620px;
+					}
+
+
+				#water{
+			position: absolute;
+			background: rgba(255, 165,   0, 0.9);
+			box-shadow: 1px;
+			transition: .5s;
+			-webkit-transition: .5s box-shadow ease-in-out;
+			-moz-transition: .5s box-shadow ease-in-out;
+			-o-transition: .5s box-shadow ease-in-out;
+			box-shadow: 0 0px 50px 30px rgba(255, 165,   0, 0.9);
+			-webkit-animation-duration: 5s;
+	 		-webkit-animation-name: ray;
+			animation-iteration-count: infinite;
+	 		animation-name: ray;
+	 		animation-direction: alternate;
+	 		animation-timing-function: ease-in-out;
+			-webkit-animation-duration: 10s;
+	}
+
+	@-webkit-keyframes ray {
+			from {
+			transform: rotate(-90deg);
+			left: 600px;
+			right: 500px;
+			top: 80px;
+			opacity: 1;
+		}
+
+		to {
+
+				transform: rotate(40deg);
+				left: 500px;
+				right: 600px;
+				opacity: .85;
+				top: 200px;
+
+		}
+	}
+
+/*
+	#spiral {
+		border-radius: 50px 50px 50px 50px;
+		width: 50px;
+		height: 50px;
+		background: transparent;
+		border: 1px solid black;
+		position: absolute;
+		top: 10px;
+		left: 4px;
+		z-index: 1;
+		-webkit-animation-name: spiral;
+		animation-iteration-count: infinite;
+		animation-name: spiral;
+		animation-direction: normal;
+		animation-timing-function: linear;
+			-webkit-animation-duration: 10s;
+	}
+
+
+		@-webkit-keyframes spiral {
+				from {
+				transform: rotate(0deg);
+				top: 0px;
+				left: 4px;
+				right: 1px;
+			}
+
+			to {
+
+					transform: rotate(360deg);
+					top: 540px;
+					left: 4px;
+					right: 6px;
+					width: 0px;
+					height: 0px;
+			}
+		}
+
+*/
+
+		#spiral2 {
+				border-radius: 100px 100px 100px 100px;
+				width: 250px;
+				height: 240px;
+				background: rgb(100, 149, 237	);
+				position: absolute;
+				top: 12px;
+				left: 224px;
+				z-index: 1;
+				-webkit-transition: .5s box-shadow ease-in;
+				-moz-transition: .5s box-shadow ease-in;
+				-o-transition: .5s box-shadow ease-in;
+				-webkit-animation-name: temp;
+				animation-iteration-count: infinite;
+				animation-name: temp;
+				animation-direction: normal;
+				animation-timing-function: linear;
+					-webkit-animation-duration: 10s;
+			}
+
+
+				@-webkit-keyframes temp {
+						from {
+						transform: rotate(0deg);
+						top: 140px;
+						left: 200px;
+						background-color: rgb(100, 149, 237	);
+						box-shadow: 0 0 50px 65px rgb(100, 149, 237	);
+
+					}
+
+					to {
+
+							transform: rotate(360deg);
+							top: 140px;
+							left: 210px;
+							background-color: rgb(230, 230, 250);
+							box-shadow: 0 0 50px 65px rgb(230, 230, 250);
+
+
+					}
+				}
+
+
+			#orb {
+				border-radius: 50px 50px 50px 50px;
+				width: 10px;
+				height: 10px;
+				background: yellow;
+				position: absolute;
+				top: 10px;
+				left: 520px;
+				z-index: 1;
+				-webkit-transition: .5s box-shadow ease-in;
+				-moz-transition: .5s box-shadow ease-in;
+				-o-transition: .5s box-shadow ease-in;
+				box-shadow: 0 0 50px 65px yellow;
+			 	-webkit-animation-name: star;
+			 	animation-iteration-count: infinite;
+			 	animation-name: star;
+			 	animation-direction: alternate;
+			 	animation-timing-function: ease-in-out;
+					-webkit-animation-duration: 10s;
+			}
+
+
+				@-webkit-keyframes star {
+						from {
+						transform: rotate(-90deg);
+						left: 600px;
+						right: 100px;
+						top: 200px;
+						opacity: 1;
+					}
+
+					to {
+
+							transform: rotate(40deg);
+							left: 100px;
+							right: 600px;
+							opacity: .85;
+							top: 400px;
+
+					}
+				}
+
+	#fill {
+				border-radius:20px 20px 20px 20px;
+					width:20px;
+					height: 20px;
+					top: 120px;
+					left: 300px;
+					position: absolute;
+					z-index: 1;
+					background: rgb(220,220,220);
+					box-shadow: 2px;
+					transition: .5s box-shadow ease-in;
+					-webkit-transition: .5s box-shadow ease-in;
+					-moz-transition: .5s box-shadow ease-in;
+					-o-transition: .5s box-shadow ease-in;
+					box-shadow: 0 0 50px 65px rgb(220,220,220);
+					z-index: 1;
+
+				}
+
+
+
+    #heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+			transform: skew(90px);
+    }
+    #heart:before,
+    #heart:after {
+			transform: skew(90px);
+      position:absolute;
+      content: "";
+      left: 30px;
+      top: 350px;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+			box-shadow: 1px;
+			transition: .5s box-shadow ease-in;
+			-webkit-transition: .5s box-shadow ease-in;
+			-moz-transition: .5s box-shadow ease-in;
+			-o-transition: .5s box-shadow ease-in;
+			box-shadow: 0 0 50px 65px red;
+			z-index: 1;
+    }
+    #heart:after {
+				transform: skew(30px);
+      left: 10px;
+			  top: 350px;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+		}
+#heart{
+		position: absolute;
+		-webkit-animation-duration: 4s;
+	 	-webkit-animation-name: love;
+	 	-webkit-animation-iteration-count: infinite;
+	 	-webkit-animation-direction: alternate;
+	 	-webkit-animation-timing-function: ease-in-out;
+	 	animation-name: love;
+	 	animation-iteration-count: infinite;
+	 	animation-direction: alternate;
+	 	animation-timing-function: ease-in-out;
+	 	z-index: 1;
+	}
+
+
+	@-webkit-keyframes love {
+		from {
+			transform: rotate(-40deg);
+			left:  500px;
+			right: 10px;
+		}
+
+		to {
+			transform: rotate(10deg);
+			left: 500px;
+			right: 10px;
+		}
+	}
+
+
+/*	#pepple {
+	      display: block;
+	      width: 50px;
+	      height: 76px;
+	      background-color: transparent;
+				border: 1px solid black;
+	      border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+				transform: rotate(100deg);
+				position: absolute;
+				top: 430px;
+				left: 38px;
+				z-index: 1;
+			}
+			#pepple1 {
+						display: block;
+						width: 50px;
+						height: 76px;
+						background-color: transparent;
+						border: 1px solid black;
+						border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+						transform: rotate(90deg);
+						position: absolute;
+						top: 480px;
+						left: 148px;
+						z-index: 1;
+					}
+
+					#pepple2 {
+								display: block;
+								width: 80px;
+								height: 130px;
+								background-color: transparent;
+								border: 1px solid black;
+								border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+								transform: rotate(90deg);
+								position: absolute;
+								top: 440px;
+								left: 48px;
+								z-index: 1;
+							}
+
+
+								#pepple3 {
+								      display: block;
+								      width: 50px;
+								      height: 76px;
+								      background-color: transparent;
+											border: 1px solid black;
+								      border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+											transform: rotate(100deg);
+											position: absolute;
+											top: 430px;
+											left: 798px;
+											z-index: 1;
+										}
+										#pepple4 {
+													display: block;
+													width: 50px;
+													height: 76px;
+													background-color: transparent;
+													border: 1px solid black;
+													border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+													transform: rotate(90deg);
+													position: absolute;
+													top: 480px;
+													left: 740px;
+													z-index: 1;
+												}
+
+												#pepple5 {
+															display: block;
+															width: 80px;
+															height: 130px;
+															background-color: transparent;
+															border: 1px solid black;
+															border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+															transform: rotate(90deg);
+															position: absolute;
+															top: 440px;
+															left: 790px;
+															z-index: 1;
+														}
+*/
+
+#leaf {
+      display: block;
+      width: 26px;
+      height: 56px;
+      background-color: red;
+      border-radius: 50% 60% 60% 50% / 70% 70% 40% 40%;
+			transform: rotate(45deg);
+			background:  rgb(46, 139,  87)	;
+			position: absolute;
+			top: 420px;
+			left: 348px;
+			z-index:1;
+			transition: .5s box-shadow ease-out;
+			-webkit-transition: .5s box-shadow ease-out;
+			-moz-transition: .5s box-shadow ease-out;
+			-o-transition: .5s box-shadow ease-out;
+			box-shadow: 0 0 10px 25px rgb(46, 139,  87)	;
+		}
+
+#leaf{
+		position: absolute;
+		-webkit-animation-duration: 4s;
+ 		-webkit-animation-name: leaf1;
+ 		-webkit-animation-iteration-count: infinite;
+ 		-webkit-animation-direction: alternate;
+ 		-webkit-animation-timing-function: ease-in-out;
+ 		animation-name: leaf1;
+ 		animation-iteration-count: infinite;
+ 		animation-direction: alternate;
+ 		animation-timing-function: ease-in-out;
+ 		z-index: 1;
+		}
+
+
+@-webkit-keyframes leaf1 {
+	from {
+		transform: rotate(60deg);
+		left:  auto -620px;
+		right: 620px;
+	}
+
+	to {
+		transform: rotate(-90deg);
+		left: 290px;
+		right: 130px;
+
+
+	}
+}
+
+
+
+
+p{
+	font-family: "Courier New";
+	top: 50px;
+	left: 150px;
+}
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+			<div id="iris"></div>
+			<div id="iris1"></div>
+			<div id="iris2"></div>
+			<div id="iris3"></div>
+			<div id="iris4"></div>
+			<div id="iris5"></div>
+			<div id="iris6"></div>
+			<div id="iris7"></div>
+			<div id="branch"></div>
+			<div id="square"></div>
+    	<div id="circle"></div>
+    	<div id="triangle"></div>
+			<div id="vase"></div>
+
+			<div id="orb"></div>
+			<div id="fill"></div>
+			<div id="heart"></div>
+			<div id="grass"></div>
+
+<div id="daisybranch"></div>
+<div id="daisy"></div>
+<div id="daisy1"></div>
+<div id="daisy2"></div>
+<div id="daisy3"></div>
+<div id="daisy4"></div>
+<div id="daisy5"></div>
+<div id="daisy6"></div>
+<div id="daisy7"></div>
+
+<div id="leaf"></div>
+<div id="leaf1"></div>
+
+<div id="dust"></div>
+<div id="dust1"></div>
+<div id="dust3"></div>
+
+<div id="pepple3"></div>
+<div id="pepple4"></div>
+<div id="pepple5"></div>
+
+
+
+<div id="spiral"></div>
+<div id="spiral2"></div>
+<div id="glasshouse"></div>
+
+<div id="water"></div>
+<div id="water1"></div>
+<div id="water2"></div>
+<div id="water3"></div>
+
+
+<p style="color:rgb(220,220,220);">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i>amnis cogitandi</i> &nbsp; &nbsp; latin for growing, like the passing time in a stream. </p>
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>

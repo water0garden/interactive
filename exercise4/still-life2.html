@@ -9,13 +9,16 @@
 	<link rel="stylesheet" href="canvas.css">
 
 	<style>
+
+
+
 	.canvas {
 		/* if you want to change the background of your canvas, do it here */
-		background: white;
+		background: rgb(220,220,220);
 	}
 
 	/* this is where you can style the objects in your still life */
-	#triangle {
+	/*#triangle {
 		width: 0;
 		height: 0;
 		border-left: 100px solid transparent;
@@ -27,24 +30,559 @@
 	}
 
 	#square {
-		width: 200px;
-		height: 200px;
+		width: 20px;
+		height: 20px;
 		background: red;
 		position: absolute;
 		top: 160px;
 		left: 350px;
 	}
+*/
+	#branch{
+		border-radius: 10px 10px 10px 10px;
+			width: 7px;
+			height: 242px;
+			position: absolute;
+			background: rgb(46, 139,  87)	;
+			top: 270px;
+			left: 130px;
 
-	#circle {
-		width: 200px;
-		height: 200px;
-		background: blue;
+
+
+		}
+	#iris {
+		width: 40px;
+		height: 40px;
+		background: red;
+		border-radius: 200px;
+		background: rgb(100, 149, 237);
+		position: absolute;
+		top: 184px;
+		left: 130px;
+		z-index: 1;
+	}
+	#iris1 {
+		width: 40px;
+		height: 40px;
+		background: rgb(100, 149, 237);
 		border-radius: 200px;
 		position: absolute;
-		top: 160px;
-		left: 600px;
+		top: 220px;
+		left: 150px;
+		z-index: 1
+	}
+	#iris2 {
+		width: 40px;
+		height: 40px;
+		background: rgb(100, 149, 237);
+		border-radius: 200px;
+		position: absolute;
+		top: 265px;
+		left: 115px;
+		z-index: 1;
+
+	}
+	#iris3 {
+		width: 40px;
+		height: 40px;
+		background: rgb(100, 149, 237);
+		border-radius: 200px;
+		position: absolute;
+		top: 250px;
+		left: 140px;
+z-index: 1;
+	}
+	#iris4 {
+		width: 70px;
+		height: 70px;
+		background: rgb(255, 235, 205);
+		border-radius: 200px;
+		position: absolute;
+		top: 210px;
+		left: 100px;
+
+
+	}
+	#iris7 {
+		width: 40px;
+		height: 40px;
+		background:  rgb(100, 149, 237);
+		border-radius: 200px;
+		position: absolute;
+		top: 255px;
+		left: 90px;
+		z-index: 1;
+
+	}
+	#iris5 {
+		width: 40px;
+		height: 40px;
+		background:  rgb(100, 149, 237);
+		border-radius: 200px;
+		position: absolute;
+		top: 188px;
+		left: 91px;
+		z-index: 1;
+	}
+	#iris6 {
+		width: 40px;
+		height: 40px;
+		background:  rgb(100, 149, 237);
+		border-radius: 200px;
+		position: absolute;
+		top: 225px;
+		left: 80px;
+		z-index:1;
 	}
 
+	#leaf1 {
+	      display: block;
+	      width: 26px;
+	      height: 56px;
+	      background-color: red;
+	      border-radius: 50% 60% 60% 50% / 70% 70% 40% 40%;
+		transform: rotate(45deg);
+		background:  rgb(46, 139,  87)	;
+		position: absolute;
+		top: 360px;
+		left: 130px;
+		z-index:1;
+	}
+
+#iris:hover, #iris1:hover, #iris2:hover,
+#iris3:hover, #iris5:hover, #iris6:hover, #iris7:hover, #iris4:hover {
+	box-shadow: 50px;
+	transition: .5s box-shadow ease-out;
+	-webkit-transition: .5s box-shadow ease-out;
+	-moz-transition: .5s box-shadow ease-out;
+	-o-transition: .5s box-shadow ease-out;
+	box-shadow: 0 0 50px 65px white;
+}
+#iris, #iris1, #iris2, #iris3, #iris5, #iris6, #iris7, #iris4 {
+	-webkit-animation-duration: 4s;
+ -webkit-animation-name: shine;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-name: shine;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ animation-timing-function: ease-in-out;
+ z-index: 1;
+}
+
+
+@-webkit-keyframes shine {
+	from {
+		transform: rotate(20deg);
+		left: auto 40px;
+		right: auto 40px;
+background-color: white;
+
+	}
+
+	to {
+		transform: rotate(-10deg);
+		left: 70px;
+		right: -10px;
+
+
+	}
+}
+
+.canvas:hover  {
+	background-color: rgb(112, 128, 144	);
+	transition: .5s  ease-out;
+	-webkit-transition: .5s ease-out;
+	-moz-transition: .5s  ease-out;
+	-o-transition: .5s ease-out;
+	z-index: 1;
+}
+
+
+	#vase {
+		border-radius: 50px 50px 50px 50px;
+		width: 50px;
+		height: 50px;
+		background: white;
+		position: absolute;
+		top: 90px;
+		left: 720px;
+		z-index: 1;
+		box-shadow: 10px;
+		direction: ltr;
+		transition: .5s box-shadow ease-out;
+		-webkit-transition: .5s box-shadow ease-out;
+		-moz-transition: .5s box-shadow ease-out;
+		-o-transition: .5s box-shadow ease-out;
+		box-shadow: 0 0 50px 65px rgba(255, 255, 255, 0.9);
+	}
+
+	#vase:hover{
+	box-shadow: 2px;
+	transition: .5s box-shadow ease-in;
+	-webkit-transition: .5s box-shadow ease-in;
+	-moz-transition: .5s box-shadow ease-in;
+	-o-transition: .5s box-shadow ease-in;
+	box-shadow: 0 0 50px 65px rgba(255, 250, 205);
+	z-index: 1;
+}
+
+#water {
+			width:0px;
+			height:0px;
+			top: 200px;
+			left: 420px;
+			position: absolute;
+			background: rgba(50, 205, 50, 0.7);
+		}
+
+		#water{
+			box-shadow: 1px;
+			transition: .5s;
+			-webkit-transition: .5s box-shadow ease-in-out;
+			-moz-transition: .5s box-shadow ease-in-out;
+			-o-transition: .5s box-shadow ease-in-out;
+			box-shadow: 0 0px 50px 30px rgba(50, 205, 50, 0.7);
+		-webkit-animation-duration: 5s;
+	 -webkit-animation-name: ray;
+
+animation-iteration-count: infinite;
+	 animation-name: ray;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-in-out;
+	 z-index: 1;
+	}
+
+
+	@-webkit-keyframes ray {
+		from {
+			transform: rotate(10deg);
+			left: 200px;
+			right: 700px;
+		}
+
+		to {
+
+				transform: rotate(-40deg);
+				left: 700px;
+				right: 200px;
+
+		}
+	}
+
+
+			#orb {
+				border-radius: 50px 50px 50px 50px;
+				width: 10px;
+				height: 10px;
+				background: yellow;
+				position: absolute;
+				top: 10px;
+				left: 520px;
+				z-index: 1;
+
+				-webkit-animation-duration: 5s;
+			 -webkit-animation-name: star;
+
+		animation-iteration-count: infinite;
+			 animation-name: star;
+			 animation-direction: alternate;
+			 animation-timing-function: ease-in-out;
+
+
+			}
+
+			@-webkit-keyframes star {
+				from {
+					transform: rotate(0deg);
+					left: 100px;
+					right: 800px;
+				}
+
+				to {
+
+						transform: rotate(360deg);
+						left: 800px;
+						right: 100px;
+
+				}
+			}
+	/*	#fill {
+				border-radius:20px 20px 20px 20px;
+					width:20px;
+					height: 20px;
+					top: 120px;
+					left: 300px;
+					position: absolute;
+					z-index: 1;
+					background: rgb(220,220,220);
+
+
+				}
+
+				#fill:hover{
+					box-shadow: 2px;
+					transition: .5s box-shadow ease-in;
+					-webkit-transition: .5s box-shadow ease-in;
+					-moz-transition: .5s box-shadow ease-in;
+					-o-transition: .5s box-shadow ease-in;
+					box-shadow: 0 0 50px 65px rgb(220,220,220);
+					z-index: 1;
+
+				}*/
+
+
+/*
+    #heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+			transform: skew(90px);
+    }
+    #heart:before,
+    #heart:after {
+			transform: skew(90px);
+      position:absolute;
+      content: "";
+      left: 30px;
+      top: 350px;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+			box-shadow: 1px;
+			transition: .5s box-shadow ease-in;
+			-webkit-transition: .5s box-shadow ease-in;
+			-moz-transition: .5s box-shadow ease-in;
+			-o-transition: .5s box-shadow ease-in;
+			box-shadow: 0 0 50px 65px red;
+			z-index: 1;
+    }
+    #heart:after {
+				transform: skew(30px);
+      left: 10px;
+			  top: 350px;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+		}
+#heart{
+		position: absolute;
+		-webkit-animation-duration: 4s;
+	 -webkit-animation-name: love;
+	 -webkit-animation-iteration-count: infinite;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-in-out;
+	 animation-name: love;
+	 animation-iteration-count: infinite;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-in-out;
+	 z-index: 1;
+	}
+*/
+
+	@-webkit-keyframes love {
+		from {
+			transform: rotate(-40deg);
+			left:  500px;
+			right: 10px;
+		}
+
+		to {
+			transform: rotate(10deg);
+			left: 500px;
+			right: 10px;
+
+
+		}
+	}
+
+
+
+	#daisybranch{
+	border-radius: 10px 10px 10px 10px;
+		width: 7px;
+		height: 242px;
+		position: absolute;
+		background: rgb(46, 139,  87)	;
+		top: 270px;
+		left: 330px;
+
+
+
+
+	}
+#daisy {
+	width: 40px;
+	height: 40px;
+	background: red;
+	border-radius: 200px;
+	background: rgb(100, 149, 237);
+	position: absolute;
+	top: 186px;
+	left: 330px;
+	z-index: 1;
+}
+#daisy1 {
+	width: 40px;
+	height: 40px;
+	background: rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 220px;
+	left: 350px;
+	z-index: 1
+}
+#daisy2 {
+	width: 40px;
+	height: 40px;
+	background: rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 265px;
+	left: 315px;
+	z-index: 1;
+
+}
+#daisy3 {
+	width: 40px;
+	height: 40px;
+	background: rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 250px;
+	left: 340px;
+z-index: 1;
+}
+#daisy4 {
+	width: 70px;
+	height: 70px;
+	background: rgb(255, 235, 205);
+	border-radius: 200px;
+	position: absolute;
+	top: 210px;
+	left: 300px;
+
+
+}
+#daisy7 {
+	width: 40px;
+	height: 40px;
+	background:  rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 255px;
+	left: 290px;
+	z-index: 1;
+
+}
+#daisy5 {
+	width: 40px;
+	height: 40px;
+	background:  rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 188px;
+	left: 291px;
+	z-index: 1;
+}
+#daisy6 {
+	width: 40px;
+	height: 40px;
+	background:  rgb(100, 149, 237);
+	border-radius: 200px;
+	position: absolute;
+	top: 225px;
+	left: 280px;
+	z-index:1;
+}
+
+#leaf {
+      display: block;
+      width: 26px;
+      height: 56px;
+      background-color: red;
+      border-radius: 50% 60% 60% 50% / 70% 70% 40% 40%;
+	transform: rotate(45deg);
+	background:  rgb(46, 139,  87)	;
+	position: absolute;
+	top: 420px;
+	left: 348px;
+	z-index:1;
+}
+
+#leaf, #leaf1{
+	position: absolute;
+	-webkit-animation-duration: 4s;
+ -webkit-animation-name: leaf1;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-name: leaf1;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ animation-timing-function: ease-in-out;
+ z-index: 1;
+}
+
+
+@-webkit-keyframes leaf1 {
+	from {
+		transform: rotate(60deg);
+		left:  auto -620px;
+		right: 620px;
+	}
+
+	to {
+		transform: rotate(-90deg);
+		left: 290px;
+		right: 130px;
+
+
+	}
+}
+
+
+#daisy, #daisy1, #daisy2, #daisy3, #daisy4, #daisy5, #daisy6, #daisy7 {
+	position: absolute;
+	-webkit-animation-duration: 4s;
+ -webkit-animation-name: shine1;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+ animation-name: shine1;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ animation-timing-function: ease-in-out;
+ z-index: 1;
+}
+
+
+@-webkit-keyframes shine1 {
+	from {
+		transform: rotate(60deg);
+		left:  auto -620px;
+		right: 620px;
+background-color: white;
+
+	}
+
+	to {
+		transform: rotate(-90deg);
+		left: 270px;
+		right: 130px;
+
+
+	}
+}
+
+p{
+	font-family: Courier;
+	top: 50px;
+	left: 150px;
+}
 	</style>
 
 </head>
@@ -55,10 +593,39 @@
     <div class="canvas">
 
 			<!-- below is where you put your objects in your still life -->
-    	<div id="square"></div>
+			<div id="iris"></div>
+			<div id="iris1"></div>
+			<div id="iris2"></div>
+			<div id="iris3"></div>
+			<div id="iris4"></div>
+			<div id="iris5"></div>
+			<div id="iris6"></div>
+			<div id="iris7"></div>
+	<div id="branch"></div>
+			<div id="square"></div>
     	<div id="circle"></div>
     	<div id="triangle"></div>
+			<div id="vase"></div>
+			<div id="water"></div>
+			<div id="orb"></div>
+			<div id="fill"></div>
+			<div id="heart"></div>
+			<div id="grass"></div>
 
+<div id="daisybranch"></div>
+<div id="daisy"></div>
+<div id="daisy1"></div>
+<div id="daisy2"></div>
+<div id="daisy3"></div>
+<div id="daisy4"></div>
+<div id="daisy5"></div>
+<div id="daisy6"></div>
+<div id="daisy7"></div>
+<div id="leaf"></div>
+<div id="leaf1"></div>
+
+<p style="color:rgb(220,220,220);">
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i>amnis cogitandi</i> &nbsp; &nbsp; latin for growing, like the passing time in a stream. </p>
 		<!-- this ends the canvas div. do not delete this! -->
     </div>
 

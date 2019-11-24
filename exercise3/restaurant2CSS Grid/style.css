@@ -3,10 +3,7 @@
 }
 
 /* Global Styles go here */
-img:hover {
-  width: 500px;
-  height: 250px;
-}
+
 
 @font-face {
   font-family: Courier;

@@ -73,6 +73,7 @@ h2 {
   margin: 2px;
   float: left;
   text-align: center;
+  font-style: normal;
 
 
 }
@@ -129,6 +130,8 @@ background-color:rgba(205, 205, 205, 0.3);
 h3 {
   font-family: Courier, 'Courier New';
   text-align: center;
+  font-style: normal;
+
 }
 
 /*box styles go here*/
@@ -137,7 +140,8 @@ ul {
   list-style: none;
   display: inline-block;
   word-wrap: break-word;
-  overflow: auto;
+text-align: left;
+ overflow: auto;
   height: 500px;
   padding: 4px;
   margin: 5px;

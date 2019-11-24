@@ -28,11 +28,13 @@ font-family: serif;
 src: url( "Ambrosia.woff") format ('woff');
 }
 
+
+
 /*navigation styles go here*/
 .fixed {
+  display: block;
+  position: relative;
   vertical-align: top;
-  position: sticky;
-  background-color: #548AEA;
   padding-left: 40px;
   margin-left: 40px;
   top: 0;
@@ -44,7 +46,31 @@ src: url( "Ambrosia.woff") format ('woff');
   font-family: Courier;
   border-radius: 10px;
   float: left;
+    -webkit-animation-name: navmove;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: navmove;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes navmove {
+    from {right: 400px;}
+    to {left: 40px; background-color: red;}
+  }
+
+  @keyframes navmove {
+    from {right: 40px;}
+    to {left: 400px; background-color: lightgrey;
+    }
 }
 
 a:link, a:visited {
@@ -90,7 +116,7 @@ body {
 }
 
 .box-meal  {
-  font-family: Courier;
+  font-family: "times new roman";
   vertical-align: top;
   box-sizing: border-box;
   margin: 5px;
@@ -116,7 +142,8 @@ h1 {
 }
 
 h3 {
-  font-family: Courier, 'Courier New';
+  font-family: Ambrosia, serif;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -130,6 +157,7 @@ ul {
   height: 500px;
   padding: 4px;
   margin: 2px;
+  line-height: 1.8;
   font-family: Courier;
 }
 .box-meal:hover, .ul:hover {
@@ -145,9 +173,6 @@ ul {
   position: relative;
   box-sizing: border-box;
 
-
-
-
 }
 
 section {
@@ -159,9 +184,9 @@ section {
 .box-note {
   font-family: Courier;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   font-size: 12px;
-
 }
 
 a:hover.box-meal{
@@ -172,11 +197,14 @@ a:hover.box-meal{
 
 .box-note:hover{
     background-image: "art.jpg";
+
+
+
 }
 
  .box-back:hover {
      background-image: url("art.jpg");
-     font-family: monospace;
+     font-family: "times new roman";
      text-align: center;
      font-size: 12px;
  }
@@ -187,12 +215,12 @@ a:hover.box-meal{
 }
 
 footer {
-  font-family: Courier;
+  font-family: Ambrosia, serif;
   font-size: 20px;
   word-wrap: break-word;
   margin: 1px;
   padding-top: 100px;
-  padding-bottom: 40px
+  padding-bottom: 40px;
   position: relative;
 }
 a{
@@ -203,6 +231,13 @@ a{
     box-sizing: border-box;
 }
 
+.home {
+  font-family: Courier;
+  position: relative;
+  padding: 5px;
+
+
+}
 /*bottom styles unused*/
 /*.box {
     float: left;
